@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de ITER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ======= Menú de navegación ======= -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">ITER Dev</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= Sección Inicio ======= -->
+    <section id="inicio" class="inicio">
+        <div class="intro-text">
+            <h2>¡Hola! Soy <span>ITER LEODAN ZAMORA SOLORZANO</span></h2>
+            <p>Desarrollador Web & Diseñador Frontend</p>
+            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <!-- ======= Sección Sobre mí ======= -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy un apasionado del desarrollo web, enfocado en crear experiencias digitales modernas, funcionales y responsivas.
+            Manejo tecnologías como HTML, CSS, JavaScript y frameworks modernos. Me gusta combinar la creatividad con la lógica
+            para construir sitios atractivos y eficientes.
+        </p>
+    </section>
+
+    <!-- ======= Sección Proyectos ======= -->
+    <section id="proyectos" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+                <h3>Sitio Web Empresarial</h3>
+                <p>Desarrollo completo de una página corporativa con HTML, CSS y JavaScript.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                <h3>Aplicación React</h3>
+                <p>SPA creada en React con consumo de API y diseño responsive.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                <h3>Portafolio Moderno</h3>
+                <p>Diseño de portafolio personal con animaciones y estilos minimalistas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Sección Contacto ======= -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <p>&copy; 2025 ITER LEODAN ZAMORA SOLORZANO. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ======= JavaScript simple para navegación ======= -->
+    <script>
+        // Suaviza el scroll
+        document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+            enlace.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
